@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link type="text/css" rel="stylesheet" href="css/style.css" />
+ <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
+
+ <link type="image" rel="icon" href="images/holyday-bg.jpg" />
+ <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,600i,700" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,500i,600,600i" rel="stylesheet">
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="shkoder.css">
+  <script src="shkoder.js" defer></script>
+  
+</head>
+<body>
+    <div id="arrow">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </div>
+
+    <nav>
+        <div class="container">
+            <div class="menu-par">
+                <div class="logo-par">
+                    <a href="index.html">
+                        <h2>Shqiperia</h2>
+                    </a>
+                </div>
+                <div class="nav">
+                    <ul id="menuList">
+                        <li><a class="menu_hover" href="index.html">Home</a></li>
+                        <li><a class="menu_hover" href="udhetoqytet.html">Udheto</a></li>
+                        
+                        <li><a class="menu_hover" href="evente.html">Aktivitete</a></li>
+                        <li><a class="menu_hover" href="contactus.html">Kontakt</a></li>
+                        <li><a class="menu_hover" href="aboutus.html">Rreth nesh</a></li>
+                        
+                    </ul>
+                    <img src="menu.png" class="menu-icon" onclick="togglemenu()">
+                </div>
+                <div class="toggle-btn">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+  <section aria-label="Newest Photos">
+    <div class="carousel" data-carousel>
+      <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+      <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+      <ul data-slides>
+        <li class="slide" data-active>
+          <img src="images/bera12.jpg" alt="Nature Image #1">
+        </li>
+        <li class="slide">
+          <img src="images/berat3.jpg" alt="Nature Image #2">
+        </li>
+        <li class="slide">
+          <img src="images/berat4.jpg" alt="Nature Image #3">
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+        <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+            <h2>Rreth nesh</h2>
+            <p>Ky website i vjen ne ndihme cdo qytetari vendas apo i huaj qe do te vizitoje vendin tone.</p>
+        </div>
+        <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+            <h2>Info</h2>
+            <p>Qendro i perditesuar me informacione</p>
+            <div class="form-element">
+                <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+            </div>
+
+        </div>
+        <div class="instagram" data-aos="fade-left" data-aos-delay="200">
+            <h2>Instagram</h2>
+            <div class="flex-row">
+                <img src="./images/instagram/background.png.jpg" alt="insta1">
+                <img src="./images/instagram/gjirokaster-3802128__480.jpg" alt="insta2">
+                <img src="./images/instagram/sarande.webp" alt="insta3">
+            </div>
+            <div class="flex-row">
+                <img src="./images/instagram/Screenshot 2022-04-27 131116.png" alt="insta4">
+                <img src="./images/instagram/shkoder.jpg" alt="insta5">
+                <img src="./images/instagram/pogradec.jpg" alt="insta6">
+            </div>
+        </div>
+        <div class="follow" data-aos="fade-left" data-aos-delay="200">
+          
+    <div class="rights flex-row">
+        <h4 class="text-gray">
+            Copyright 2022 
+           
+        </h4>
+    </div>
+    
+</footer>
+
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/extrenaljq.js"></script>
+    <script>
+
+        var menuList = document.getElementById("menuList");
+        
+         menuList.style.maxHeight = "0px";
+        
+        function togglemenu(){
+        if(menuList.style.maxHeight == "0px"){
+          menuList.style.maxHeight ="170px" ;
+        }
+        else
+        {
+        menuList.style.maxHeight ="0px" ;
+        }
+        }
+        
+    </script>
+</body>
+
+</html>

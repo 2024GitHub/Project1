@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="contuctus1.css">
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div id="arrow">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </div>
+
+    <nav>
+        <div class="container">
+            <div class="menu-par">
+                <div class="logo-par">
+                    <a href="index.html">
+                        <h2>Shqiperia</h2>
+                    </a>
+                </div>
+                <div class="nav">
+                    <ul id="menuList">
+                        <li><a class="menu_hover" href="index.html">Home</a></li>
+                        <li><a class="menu_hover" href="udhetoqytet.html">Udheto</a></li>
+                        
+                        <li><a class="menu_hover" href="evente.html">Aktivitete</a></li>
+                        <li><a class="menu_hover" href="contactus.html">Kontakt</a></li>
+                        <li><a class="menu_hover" href="aboutus.html">Rreth nesh</a></li>
+                    </ul>
+                    <img src="menu.png" class="menu-icon" onclick="togglemenu()">
+                </div>
+                <div class="toggle-btn">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+<div class="contact-section">
+  
+	<p class="text">Dhe bota është e bukur sepse mund të udhëtosh. (N. Przhevalsky)
+        <span class="dots"> ...</span>
+         <span class="moreText">Shqipëria është nga ato vende, që vitet e fundit e kanë hedhur vëmendjen nga sektori i turizmit, si një nga sektorët më të fuqishëm ekonomik, duke qenë se edhe kushtet natyrore e favorizojnë shumë. Vendi ofron detin, malin, fushën, luginën, lumenj, laguna, pyje etj. të cilat mund të vizitohen brenda një kohe të shkurtër dhe duke ja bërë më të lehtë turistit për t’i shijuar të gjitha së bashku. Sigurisht që pa harruar këtu edhe kështjellat, kalatë, parqet arkeologjike etj.</span></p>
+<button class="read-more-btn">Read More</button>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+            <h2>Rreth nesh</h2>
+            <p>Ky website i vjen ne ndihme cdo qytetari vendas apo i huaj qe do te vizitoje vendin tone.</p>
+        </div>
+        <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+            <h2>Info</h2>
+            <p>Qendro i perditesuar me informacione</p>
+            <div class="form-element">
+                <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+            </div>
+
+        </div>
+        <div class="instagram" data-aos="fade-left" data-aos-delay="200">
+            <h2>Instagram</h2>
+            <div class="flex-row">
+                <img src="./images/instagram/background.png.jpg" alt="insta1">
+                <img src="./images/instagram/gjirokaster-3802128__480.jpg" alt="insta2">
+                <img src="./images/instagram/sarande.webp" alt="insta3">
+            </div>
+            <div class="flex-row">
+                <img src="./images/instagram/Screenshot 2022-04-27 131116.png" alt="insta4">
+                <img src="./images/instagram/shkoder.jpg" alt="insta5">
+                <img src="./images/instagram/pogradec.jpg" alt="insta6">
+            </div>
+        </div>
+        <div class="follow" data-aos="fade-left" data-aos-delay="200">
+          
+    <div class="rights flex-row">
+        <h4 class="text-gray">
+            Copyright 2022 
+           
+        </h4>
+    </div>
+    
+</footer>
+
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/extrenaljq.js"></script>
+    <script>
+
+        var menuList = document.getElementById("menuList");
+        
+         menuList.style.maxHeight = "0px";
+        
+        function togglemenu(){
+        if(menuList.style.maxHeight == "0px"){
+          menuList.style.maxHeight ="170px" ;
+        }
+        else
+        {
+        menuList.style.maxHeight ="0px" ;
+        }
+        }
+
+        const readMoreBtn = document.querySelector(".read-more-btn");
+const text = document.querySelector(".text");
+
+readMoreBtn.addEventListener("click", (e) => {
+  text.classList.toggle("show-more");
+  if (readMoreBtn.innerText === "Read More") {
+    readMoreBtn.innerText = "Read Less";
+  } else {
+    readMoreBtn.innerText = "Read More";
+  }
+});
+        
+    </script>
+
+  </body>
+</html>

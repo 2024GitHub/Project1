@@ -1,0 +1,109 @@
+
+
+#blog {
+    padding: 100px 0;
+}
+
+#blog h3 {
+    color: #343a40;
+    font-size: 42px;
+    font-weight: 600;
+    padding-bottom: 12px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+div#blog-par {
+    display: flex;
+    margin-top: 70px;
+}
+
+.blog-content {
+    display: flex;
+    align-items: center;
+}
+
+.blog-info ul li {
+    display: inline-block;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #999;
+    font-size: 13px !important;
+    font-size: 0.75rem;
+    margin-right: 5px;
+}
+
+.blog-img {
+    position: relative;
+}
+
+.blog-img:before {
+    content: " Jan-Dhj";
+    position: absolute;
+    right: 0;
+    top: 0px;
+    font-size: 17px;
+    background-color: #00a8c5;
+    color: #fff;
+    z-index: 1;
+    padding: 9px;
+}
+
+.blog-img img {
+    height: 140px;
+    width: 300px;
+}
+
+.blog-info {
+    margin-left: 30px;
+}
+
+.blog-info h4 {
+    color: #00a8c5;
+    font-size: 20px;
+    margin: 6px 0px;
+    cursor: pointer;
+}
+
+.blog-content p {
+    color: #777;
+    font-size: 14px;
+    line-height: 25px;
+
+}
+.menu-icon{
+    width:25px;
+    cursor:pointer;
+    display:none;
+}
+
+@media only screen and (max-width:700px){
+    .nav ul{
+   width:100%;
+   background:transparent;
+   position:absolute;
+   top:75px;
+   right:0;
+   z-index:999;
+   
+}
+      .nav ul li {
+display:block;
+margin-bottom:10px;
+margin-top:10px;
+margin-right:auto;
+}
+      .nav ul li a { 
+color:#7fffdc;
+
+      }
+.menu-icon{
+display:block;
+z-index:999;
+}
+
+#menuList{
+overflow:hidden;
+transition:0.5s;
+}
+}
